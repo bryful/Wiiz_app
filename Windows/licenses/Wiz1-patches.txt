@@ -1,0 +1,24 @@
+Wiz1 optional bug-fix data provenance
+
+The optional Wiz1 bug-fix table was derived from the following user-supplied
+IPS files in reference/patch/fc, not from a newly authored emulator/game core.
+
+wiz1patch.ips (2011-08)
+SHA-256: 104de303bc184bd09208b19c8ad68a882efc2aeab077ec0c685aa40aa8372351
+The accompanying notes attribute this patch to Hack ROM thread part 8,
+poster 892 (901), and identify digiverse.web.fc2.com as the likely source.
+This attribution is based on those notes, not independently confirmed authorship.
+
+wizardry1_pg_fc_patch24_BoltacKAUYO.ips
+SHA-256: ce5dd6d77642ae1738ae8683d7c5dce987722783a269aa03a323d9c3761fb623
+wizardry1_pg_fc_patch25_BoltacURUYO.ips
+SHA-256: 1f40ca6b19f4950c19c9305c4e037b49ef0f93c9e29540b1de32065cf5f1aabe
+The single-function patch collection notes credit part 8 poster 446 (457).
+
+No explicit license or redistribution grant was found in the supplied material.
+Wiiz's MIT license does not grant rights to these third-party patch data.
+Retain this provenance notice; third-party redistribution conditions remain
+unconfirmed. Original Wizardry game rights belong to their respective owners.
+
+The patches are applied only to private execution copies of compatible ROMs.
+No game ROM is included. For behavior and compatibility see docs/wiz1-bugfix.md.

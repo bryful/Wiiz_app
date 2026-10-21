@@ -1,0 +1,16 @@
+{
+  "upstream": "https://github.com/bryful/Wiz",
+  "revision": "020e0b5eb180595d7ce879d8305ed3792c49455d",
+  "license": "MIT",
+  "copyright": "Copyright (c) 2019 bryful",
+  "files_sha256": {
+    "CRC16.cs": "f3fb82d9b21df01a12c2a55be163f2b5ac0ba7d0678244aa86e5e6e475e02e08",
+    "LICENSE": "305916f533c11a202ca15682d55d4a33bf58e58b7096d0da42b99e83bfdc5c7b",
+    "WizData.cs": "3866422493fd95e597005c9bd33e852d4b0d19dc0ef1e22e6e1344e1b4880ef8",
+    "WizIO.cs": "fb28c5076f3d1708826aa019da8508a8cda9c5466ec3cc9eb43a721647e9c15b"
+  },
+  "adopted_in": "app/save_json.cpp",
+  "adoption": "Character layout and checksum/mirror reconstruction from WizData.cs, WizIO.cs and CRC16.cs. C# reference sources are preserved unchanged, not compiled. ROM-specific C++ adapter only; no emulator core implementation. W1 carry folding corrected against actual-ROM SRAM (multiple carries). W2/3 backup length is 20 * 0x60 as in implementation, not README 0x80 wording. CRC is CRC-16/CCITT 0x1021 as in CRC16.cs, not README CRC-8 wording. Whole-record exchange also adapts WizData.SwapChar / CurrentDataUp / CurrentDataDown in app/save_json.cpp; ROM-specific party slot references are remapped before returning to the title. See docs/roster-order.md.",
+  "runtime_dependencies": "None beyond standard C++; nlohmann/json handles JSON. Mapper 1/4 execution remains in binjnes.",
+  "verification": "Known SHA-256 target revisions of FC I/II/III, Windows MSVC. See docs/save-data.md."
+}

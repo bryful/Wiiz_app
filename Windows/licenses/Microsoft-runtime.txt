@@ -1,0 +1,9 @@
+Microsoft Visual C++ Runtime 14.51.36231 (x64)
+Copyright Microsoft Corporation. All rights reserved.
+
+The DLLs beside wiiz.exe are application-local Release runtime components from
+Microsoft Visual Studio Community 2026, VC/Redist/MSVC/14.51.36231/x64/Microsoft.VC145.CRT.
+They are proprietary Microsoft runtime components, not covered by the MIT or
+zlib licenses of the other dependencies. Retain them with the application.
+
+Microsoft redistribution reference: https://aka.ms/vs/18/redistribution

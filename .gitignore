@@ -1,0 +1,15 @@
+# User ROMs, saves and local settings must not enter the distribution repository.
+Windows/roms/*
+!Windows/roms/.gitkeep
+*.[nN][eE][sS]
+*.[sS][aA][vV]
+*.state
+*.state.*
+saves/
+states/
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.jks
+*.keystore
