@@ -13,3 +13,14 @@ Thumbs.db
 *.tmp
 *.jks
 *.keystore
+*.tbf
+*.map.json
+backups/
+*.p12
+*.pfx
+*.key
+*.pem
+release.properties
+local.properties
+*.pdb
+*.ilk

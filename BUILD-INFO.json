@@ -1,0 +1,17 @@
+{
+  "updated": "2026-10-25",
+  "version": "0.1.0",
+  "source_commit": "39674019f0279224b424c70a7df88d9b90a832d5",
+  "source_worktree_clean": true,
+  "windows": "x64 Release",
+  "android": {
+    "package": "com.wiiz.app",
+    "versionCode": 1,
+    "abi": "arm64-v8a",
+    "minSdk": 23,
+    "targetSdk": 35,
+    "debuggable": false,
+    "certificate_sha256": "683401fed21653794b6bf89b6f50062e41fd63218e94c501f039c732287fa151"
+  },
+  "known_distribution_issue": "Redistribution permission for optional Wiz1 bug-fix patch data remains unconfirmed. See Windows/licenses/Wiz1-patches.txt and Android/licenses/Wiz1-patches.txt."
+}
