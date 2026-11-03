@@ -14,7 +14,7 @@
 
 ## ダウンロードするもの
 
-このリポジトリの「Code」→「Download ZIP」でダウンロードし、ZIP全体を展開してください。
+[Releases](https://github.com/bryful/Wiiz_app/releases) を開き、使用するOS向けの配布ファイルをダウンロードしてください。Windows版はZIP全体を展開し、Android版はAPKを端末へ保存してください。
 
 | フォルダー | 内容・対象 |
 |---|---|
