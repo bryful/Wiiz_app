@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-25",
+  "updated": "2026-11-14",
   "version": "0.1.0",
   "source_commit": "8d486f3fee6444fa3d8555541d1328da97a64479",
   "source_worktree_clean": true,
@@ -28,5 +28,42 @@
     "Wiz1 bug-fix regression checks"
   ],
   "experience_behavior": "Advance to the first cumulative threshold strictly greater than current SRAM experience on every activation, including repeated activations before resting.",
-  "experience_level_display": "EXP EST. LV: current experience-based estimated level, refreshed after each addition"
+  "experience_level_display": "EXP EST. LV: current experience-based estimated level, refreshed after each addition",
+  "windows_release": {
+    "updated": "2026-11-14",
+    "configuration": "x64 Release",
+    "built_at_utc": "2026-11-14T09:58:06.764627+00:00",
+    "source_base_commit": "e05b18e88df664cfa0e961a7b1c41e1fa886c9c0",
+    "source_worktree_clean": false,
+    "features": [
+      "Independent battle EXP and Gold multipliers"
+    ],
+    "validation": [
+      "Windows x64 Release build",
+      "Six-ROM reward division checks",
+      "Six-ROM distribution executable scan"
+    ],
+    "unverified": [
+      "End-to-end battle, treasure and save flow"
+    ]
+  },
+  "android_release": {
+    "updated": "2026-11-14",
+    "configuration": "arm64-v8a Release",
+    "built_at_utc": "2026-11-14T10:08:05.748605+00:00",
+    "source_base_commit": "e05b18e88df664cfa0e961a7b1c41e1fa886c9c0",
+    "source_worktree_clean": false,
+    "features": [
+      "Independent battle EXP and Gold multipliers"
+    ],
+    "validation": [
+      "assembleRelease",
+      "lintVitalRelease",
+      "APK v2 signature matches previous release",
+      "16 KiB ZIP alignment"
+    ],
+    "unverified": [
+      "Android device installation and gameplay"
+    ]
+  }
 }
