@@ -53,7 +53,8 @@ SAVと探索記録を移動・バックアップするときは、この2ファ�
 保存済みスロットへの保存は上書き。Qメニュー内は一時停止したまま操作でき、Zで戻る。
 空スロット・壊れたファイル・別ROMのデータの読込失敗時は、現在のゲームを維持してメッセージを表示する。
 
-保存先は `%APPDATA%\Wiiz\Wiiz\states\<ROMのSHA256>\slot1.json` 〜 `slot5.json`。
+保存先は `%APPDATA%\Wiiz\Wiiz\states\<ROM名>.stot1.state` 〜 `<ROM名>.stot5.state`。
+`wiz1.nes` のスロット1は `wiz1.stot1.state`。新しい名前のファイルがない場合は、従来の `states\<ROMのSHA256>\slot1.json` などを読み込める。
 形式 `wiiz-state` のJSONには、CPU/PPU/APU/Mapper/RAM、完成画面、音声のフィルター・未処理サンプル、
 高速化用の等速音楽コアも含める。binjnesの既存 `emulator_write_state` / `emulator_read_state` を使用する。
 ネイティブポインターは保存せず、復帰先の新しいコアでポインターを再接続する。

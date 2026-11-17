@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-14",
+  "updated": "2026-11-16",
   "version": "0.1.0",
   "source_commit": "8d486f3fee6444fa3d8555541d1328da97a64479",
   "source_worktree_clean": true,
@@ -30,37 +30,40 @@
   "experience_behavior": "Advance to the first cumulative threshold strictly greater than current SRAM experience on every activation, including repeated activations before resting.",
   "experience_level_display": "EXP EST. LV: current experience-based estimated level, refreshed after each addition",
   "windows_release": {
-    "updated": "2026-11-14",
+    "updated": "2026-11-16",
     "configuration": "x64 Release",
-    "built_at_utc": "2026-11-14T09:58:06.764627+00:00",
-    "source_base_commit": "e05b18e88df664cfa0e961a7b1c41e1fa886c9c0",
+    "built_at_utc": "2026-11-16T13:32:49.039350+00:00",
+    "source_base_commit": "eaa19cb3e8424898eb1876af4f558e1fb0e64efe",
     "source_worktree_clean": false,
     "features": [
-      "Independent battle EXP and Gold multipliers"
+      "ROM-basename state filenames and legacy state loading",
+      "Wiz1, Wiz2 and Wiz3 roster race and class editing during gameplay without a reset"
     ],
     "validation": [
-      "Windows x64 Release build",
-      "Six-ROM reward division checks",
-      "Six-ROM distribution executable scan"
+      "Windows x64 Release build and PE architecture check",
+      "Six original and parameter-edited FC ROMs: identity editing in training and tavern, unchanged facility screen, backups, roster field isolation, and battery reload",
+      "Six-ROM SDL training menu and roster reorder regression",
+      "Distribution content check"
     ],
     "unverified": [
-      "End-to-end battle, treasure and save flow"
+      "Identity editing during battle and subsequent equipment or spell use"
     ]
   },
   "android_release": {
-    "updated": "2026-11-14",
+    "updated": "2026-11-16",
     "configuration": "arm64-v8a Release",
-    "built_at_utc": "2026-11-14T10:08:05.748605+00:00",
-    "source_base_commit": "e05b18e88df664cfa0e961a7b1c41e1fa886c9c0",
+    "built_at_utc": "2026-11-16T13:32:51.964248+00:00",
+    "source_base_commit": "eaa19cb3e8424898eb1876af4f558e1fb0e64efe",
     "source_worktree_clean": false,
     "features": [
-      "Independent battle EXP and Gold multipliers"
+      "ROM-basename state filenames and legacy state loading",
+      "Wiz1, Wiz2 and Wiz3 roster race and class editing during gameplay without a reset"
     ],
     "validation": [
-      "assembleRelease",
-      "lintVitalRelease",
-      "APK v2 signature matches previous release",
-      "16 KiB ZIP alignment"
+      "assembleRelease and lintVitalRelease",
+      "Non-debuggable arm64-v8a APK",
+      "APK v1/v2 signing certificate matches previous release",
+      "16 KiB ZIP alignment and APK content check"
     ],
     "unverified": [
       "Android device installation and gameplay"
