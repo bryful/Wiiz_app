@@ -1,6 +1,6 @@
 # User ROMs, saves and local settings must not enter the distribution repository.
-Windows/roms/*
-!Windows/roms/.gitkeep
+**/Windows/roms/*
+!**/Windows/roms/.gitkeep
 *.[nN][eE][sS]
 *.[sS][aA][vV]
 *.state

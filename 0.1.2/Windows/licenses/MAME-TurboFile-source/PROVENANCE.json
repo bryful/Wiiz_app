@@ -1,0 +1,11 @@
+{
+  "upstream": "https://github.com/mamedev/mame",
+  "revision": "cd680acf012140761f9dee37dadd4c11a1207fbd",
+  "license": "BSD-3-Clause",
+  "copyright": "kmg",
+  "files": {
+    "turbofile.cpp": "4a54b7a241b8ecfd34b669cd03ef141d9f723b6cd49ff5d219560f5d8ec4acfa",
+    "turbofile.h": "40062f443aaac08094fe23dd9fcc8b1ccb5c11f77ada9a9fa1ed937cdc7ba6ae"
+  },
+  "adaptation": "Standalone C port of read_exp/write in turbofile_device.h; MAME framework, mapper, CPU, PPU and NVRAM components are not linked. Used alongside existing binjnes MMC1/MMC3 core; persistence belongs to Wiiz."
+}

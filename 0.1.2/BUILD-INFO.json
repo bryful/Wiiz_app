@@ -1,0 +1,305 @@
+{
+  "updated": "2026-11-21",
+  "version": "0.1.2",
+  "source_commit": "3517d0b2af48a0d3d632f5485edfbcb8329c05bb",
+  "source_worktree_clean": false,
+  "windows": "x64 Release",
+  "android": {
+    "package": "com.wiiz.app",
+    "versionCode": 3,
+    "abi": "arm64-v8a",
+    "minSdk": 23,
+    "targetSdk": 35,
+    "debuggable": false,
+    "certificate_sha256": "683401fed21653794b6bf89b6f50062e41fd63218e94c501f039c732287fa151",
+    "versionName": "0.1.2"
+  },
+  "known_distribution_issue": "Redistribution permission for optional Wiz1 bug-fix patch data remains unconfirmed. See Windows/licenses/Wiz1-patches.txt and Android/licenses/Wiz1-patches.txt.",
+  "built_at_utc": "2026-11-21T14:18:41.532220+00:00",
+  "features": [
+    "Next-level experience preparation",
+    "Tavern mixed-alignment parties",
+    "Character alignment editing"
+  ],
+  "validation": [
+    "Windows x64 Release build",
+    "Android assembleRelease and lintVitalRelease",
+    "APK v1/v2 signature and 16KiB zipalign",
+    "Six-ROM difficulty and assist checks",
+    "Wiz1 bug-fix regression checks"
+  ],
+  "experience_behavior": "Advance to the first cumulative threshold strictly greater than current SRAM experience on every activation, including repeated activations before resting.",
+  "experience_level_display": "EXP EST. LV: current experience-based estimated level, refreshed after each addition",
+  "windows_release": {
+    "updated": "2026-11-21",
+    "configuration": "x64 Release",
+    "built_at_utc": "2026-11-21T14:18:41.532220+00:00",
+    "source_base_commit": "3517d0b2af48a0d3d632f5485edfbcb8329c05bb",
+    "source_worktree_clean": false,
+    "features": [
+      "ROM-basename state filenames and legacy state loading",
+      "Wiz1, Wiz2 and Wiz3 roster race and class editing during gameplay without a reset",
+      "Explored cells green RGB(24,88,64); unexplored cells gray RGB(96,96,96) using existing exploration data",
+      "Host MAP: arrows select position; Select/Start select floor; A (Windows X) warps party; B (Windows Z) cancels",
+      "Host movement uses original ROM floor reload and redraw without MP consumption",
+      "Existing original MALOR spell behavior preserved",
+      "GBWiz-style paused two-character party inventory editor: equip/remove, transfer/delete/reorder, collect unidentified and send unequipped",
+      "Original ROM equipment/AC/passive recalculation on an isolated existing binjnes core; live CPU and unrelated character fields preserved",
+      "Japanese item names from the loaded ROM CHR font; Windows I / Q Party items, Android Items button",
+      "GBWiz-style party inventory editor: equip/remove, transfer/delete/reorder, collect unidentified and send unequipped",
+      "Any non-battle scene with a valid party; no location allowlist or dungeon-input-wait requirement",
+      "Verified original inventory cache synchronization; native item transfers finish before opening",
+      "Native character AC/passive recalculation on an isolated existing binjnes core; shared town scratch RAM preserved",
+      "Windows I / Q Party items and Android Items button, including while the host map is displayed",
+      "Original battle context and restored battle states reject the editor; absent/disbanded parties are rejected"
+    ],
+    "validation": [
+      "Windows x64 Release build and PE architecture check",
+      "Six original and parameter-edited FC ROMs: identity editing in training and tavern, unchanged facility screen, backups, roster field isolation, and battery reload",
+      "Six-ROM SDL training menu and roster reorder regression",
+      "Distribution content check",
+      "2026-11-19 Release build; source hashes match six-ROM map navigation validation",
+      "Six local original and parameter-edited FC ROMs: native weapon damage, equip/remove, transfer/reorder/delete, bulk operations, flags/curse guards, default-no delete, stale rejection, unrelated records, save reload and original gameplay resume",
+      "Six-ROM SDL open/submenu/close and state-load exits; ROM files unchanged",
+      "Android controller layout: eight portrait/landscape/small/tablet conditions, 15 buttons, bounds and overlap checks",
+      "Windows x64 Release PE machine 0x8664",
+      "Android arm64-v8a Release, non-debuggable, APK v1/v2 signature matches previous distribution and 16KiB ZIP alignment",
+      "Distribution/APK content check: no ROM/save/state/signing keys or release.properties",
+      "Six original and parameter-edited FC ROMs: item operations, flags/curse guards, native damage calculation, unrelated records preserved, save reload and gameplay resume",
+      "Six-ROM 14-scene checks: dungeon, camp/person/detail, tavern/roster, castle, inn/person, shop/person/inventory, temple, town edge; original screen preserved and edited inventory survives native resume",
+      "Original training entry disbands the party; no-party rejection verified",
+      "Six-ROM original encounter entry and restored battle snapshot: item editor refused, SRAM unchanged",
+      "Six-ROM SDL open/submenu/close/state-load-exit checks; ROM unchanged",
+      "Windows x64 Release and signed Android arm64-v8a Release builds",
+      "APK certificate SHA256 matches previous distribution: 683401fed21653794b6bf89b6f50062e41fd63218e94c501f039c732287fa151",
+      "APK 16KiB ZIP alignment, architecture and forbidden-content checks"
+    ],
+    "unverified": [
+      "Identity editing during battle and subsequent equipment or spell use"
+    ],
+    "source_files_sha256": {
+      "CMakeLists.txt": "1f4d14589c537b9bc4695caa7f2e60767f43789be4c9a1042e4f6f792fc33448",
+      "app/main.cpp": "e439751365376737cea47e3fa599577c2869acd868497c28afe56a9665784ed9",
+      "app/core_bridge.c": "bfe7bbedaae327d79947e5d4e0d3599f974d180e245af23c9d811cf7e3c47653",
+      "app/core_bridge.h": "7a4edf35722c78bdf9a547f3d00d2d02a34eb592d2e80b675aa874b5127d226f",
+      "app/session.cpp": "6b9c047ef367a945a4e8e9aa8b50d68cc946a2734fcb1d519582a040061e0630",
+      "app/session.hpp": "8dec85c71f0e499562215ded0a638ee7819e9c522734407531fdbe4f7e685632",
+      "app/item_editor.hpp": "60ad4af42b6bc11ffdcb3ce4b1f43d020f9108da1de4e837ff09d1dcef1bf16a",
+      "app/persistence_check.cpp": "e3bf64911f15d9a64feaad17703dd8bf71b91b4b58ba7ea8aff453e842ddf95b",
+      "app/spell_map_view.cpp": "c7c3cd2b0bd50bda99b767ebb21ea71dee371b2956d6c0e85f40f3d2503b5cf7",
+      "android/app/src/main/java/com/wiiz/app/WiizActivity.java": "62482943582d01b2f49eba624f72c9d410b67fc3fbb6c7477d418e701a6c4015",
+      "android/app/src/main/java/com/wiiz/app/ControllerLayout.java": "4df64675cdadf6390e5a7b378747f83c5c05b49afbfcec815ca518a5fdaaa17f",
+      "tests/check_native_items.py": "044177fd183b52481dfbb6a696187bd32db2478a183581ed98768e967682f791",
+      "docs/item-editor.md": "7764135473b827e1fb48105c99e7c3abcb9f9d95ef14a0f77100f6212b32e715",
+      "third_party/binjnes/src/emulator.c": "4f78a5bc2fc8ccf5638e180d1f209d55383a80c534d649d7a23b452d8dfcdb7f",
+      "app/wiiz.rc": "49e1902387bb387a382018dd331f52d4b1e74821ac0acf710202bc9d923bae4e",
+      "android/app/build.gradle": "9bec273e11a89fe898d479f516f8e2f704fbbcfce99b1dbcc96635c39f3ac184",
+      "third_party/binjnes/src/emulator.h": "0c8a0063ad5c01084302570047be875f1d8a7dd25607925e190c21e822dd1b54"
+    },
+    "version": "0.1.2"
+  },
+  "android_release": {
+    "updated": "2026-11-21",
+    "configuration": "arm64-v8a Release",
+    "built_at_utc": "2026-11-21T14:18:41.532220+00:00",
+    "source_base_commit": "3517d0b2af48a0d3d632f5485edfbcb8329c05bb",
+    "source_worktree_clean": false,
+    "features": [
+      "ROM-basename state filenames and legacy state loading",
+      "Wiz1, Wiz2 and Wiz3 roster race and class editing during gameplay without a reset",
+      "Explored cells green RGB(24,88,64); unexplored cells gray RGB(96,96,96) using existing exploration data",
+      "Host MAP: arrows select position; Select/Start select floor; A (Windows X) warps party; B (Windows Z) cancels",
+      "Host movement uses original ROM floor reload and redraw without MP consumption",
+      "Existing original MALOR spell behavior preserved",
+      "GBWiz-style paused two-character party inventory editor: equip/remove, transfer/delete/reorder, collect unidentified and send unequipped",
+      "Original ROM equipment/AC/passive recalculation on an isolated existing binjnes core; live CPU and unrelated character fields preserved",
+      "Japanese item names from the loaded ROM CHR font; Windows I / Q Party items, Android Items button",
+      "GBWiz-style party inventory editor: equip/remove, transfer/delete/reorder, collect unidentified and send unequipped",
+      "Any non-battle scene with a valid party; no location allowlist or dungeon-input-wait requirement",
+      "Verified original inventory cache synchronization; native item transfers finish before opening",
+      "Native character AC/passive recalculation on an isolated existing binjnes core; shared town scratch RAM preserved",
+      "Windows I / Q Party items and Android Items button, including while the host map is displayed",
+      "Original battle context and restored battle states reject the editor; absent/disbanded parties are rejected"
+    ],
+    "validation": [
+      "assembleRelease and lintVitalRelease",
+      "Non-debuggable arm64-v8a APK",
+      "APK v1/v2 signing certificate matches previous release",
+      "16 KiB ZIP alignment and APK content check",
+      "2026-11-19 Release build; source hashes match six-ROM map navigation validation",
+      "Six local original and parameter-edited FC ROMs: native weapon damage, equip/remove, transfer/reorder/delete, bulk operations, flags/curse guards, default-no delete, stale rejection, unrelated records, save reload and original gameplay resume",
+      "Six-ROM SDL open/submenu/close and state-load exits; ROM files unchanged",
+      "Android controller layout: eight portrait/landscape/small/tablet conditions, 15 buttons, bounds and overlap checks",
+      "Windows x64 Release PE machine 0x8664",
+      "Android arm64-v8a Release, non-debuggable, APK v1/v2 signature matches previous distribution and 16KiB ZIP alignment",
+      "Distribution/APK content check: no ROM/save/state/signing keys or release.properties",
+      "Six original and parameter-edited FC ROMs: item operations, flags/curse guards, native damage calculation, unrelated records preserved, save reload and gameplay resume",
+      "Six-ROM 14-scene checks: dungeon, camp/person/detail, tavern/roster, castle, inn/person, shop/person/inventory, temple, town edge; original screen preserved and edited inventory survives native resume",
+      "Original training entry disbands the party; no-party rejection verified",
+      "Six-ROM original encounter entry and restored battle snapshot: item editor refused, SRAM unchanged",
+      "Six-ROM SDL open/submenu/close/state-load-exit checks; ROM unchanged",
+      "Windows x64 Release and signed Android arm64-v8a Release builds",
+      "APK certificate SHA256 matches previous distribution: 683401fed21653794b6bf89b6f50062e41fd63218e94c501f039c732287fa151",
+      "APK 16KiB ZIP alignment, architecture and forbidden-content checks"
+    ],
+    "unverified": [
+      "Android device installation and gameplay"
+    ],
+    "source_files_sha256": {
+      "CMakeLists.txt": "1f4d14589c537b9bc4695caa7f2e60767f43789be4c9a1042e4f6f792fc33448",
+      "app/main.cpp": "e439751365376737cea47e3fa599577c2869acd868497c28afe56a9665784ed9",
+      "app/core_bridge.c": "bfe7bbedaae327d79947e5d4e0d3599f974d180e245af23c9d811cf7e3c47653",
+      "app/core_bridge.h": "7a4edf35722c78bdf9a547f3d00d2d02a34eb592d2e80b675aa874b5127d226f",
+      "app/session.cpp": "6b9c047ef367a945a4e8e9aa8b50d68cc946a2734fcb1d519582a040061e0630",
+      "app/session.hpp": "8dec85c71f0e499562215ded0a638ee7819e9c522734407531fdbe4f7e685632",
+      "app/item_editor.hpp": "60ad4af42b6bc11ffdcb3ce4b1f43d020f9108da1de4e837ff09d1dcef1bf16a",
+      "app/persistence_check.cpp": "e3bf64911f15d9a64feaad17703dd8bf71b91b4b58ba7ea8aff453e842ddf95b",
+      "app/spell_map_view.cpp": "c7c3cd2b0bd50bda99b767ebb21ea71dee371b2956d6c0e85f40f3d2503b5cf7",
+      "android/app/src/main/java/com/wiiz/app/WiizActivity.java": "62482943582d01b2f49eba624f72c9d410b67fc3fbb6c7477d418e701a6c4015",
+      "android/app/src/main/java/com/wiiz/app/ControllerLayout.java": "4df64675cdadf6390e5a7b378747f83c5c05b49afbfcec815ca518a5fdaaa17f",
+      "tests/check_native_items.py": "044177fd183b52481dfbb6a696187bd32db2478a183581ed98768e967682f791",
+      "docs/item-editor.md": "7764135473b827e1fb48105c99e7c3abcb9f9d95ef14a0f77100f6212b32e715",
+      "third_party/binjnes/src/emulator.c": "4f78a5bc2fc8ccf5638e180d1f209d55383a80c534d649d7a23b452d8dfcdb7f",
+      "app/wiiz.rc": "49e1902387bb387a382018dd331f52d4b1e74821ac0acf710202bc9d923bae4e",
+      "android/app/build.gradle": "9bec273e11a89fe898d479f516f8e2f704fbbcfce99b1dbcc96635c39f3ac184",
+      "third_party/binjnes/src/emulator.h": "0c8a0063ad5c01084302570047be875f1d8a7dd25607925e190c21e822dd1b54"
+    },
+    "version": "0.1.2"
+  },
+  "map_colors_release": {
+    "built_at_utc": "2026-11-19T10:33:25.224010+00:00",
+    "source_base_commit": "3517d0b2af48a0d3d632f5485edfbcb8329c05bb",
+    "source_worktree_clean": false,
+    "features": [
+      "Explored cells green RGB(24,88,64); unexplored cells gray RGB(96,96,96) using existing exploration data"
+    ],
+    "validation": [
+      "Windows x64 Release build",
+      "FC-I actual ROM spell-map test including explored/unexplored pixel colors and SDL controls",
+      "Android assembleRelease and lintVitalRelease",
+      "APK certificate matches previous distribution",
+      "16 KiB ZIP alignment and APK content check"
+    ],
+    "unverified": [
+      "Android device display",
+      "FC-II and FC-III color rendering"
+    ]
+  },
+  "map_navigation_release": {
+    "built_at_utc": "2026-11-19T10:50:25.706954+00:00",
+    "source_base_commit": "3517d0b2af48a0d3d632f5485edfbcb8329c05bb",
+    "source_worktree_clean": false,
+    "features": [
+      "Host MAP: arrows select position; Select/Start select floor; A (Windows X) warps party; B (Windows Z) cancels",
+      "Host movement uses original ROM floor reload and redraw without MP consumption",
+      "Existing original MALOR spell behavior preserved"
+    ],
+    "validation": [
+      "Windows x64 Release build",
+      "Six original and parameter-edited FC ROMs: host map cursor/floor browsing, B cancellation, same-floor warp and destination exploration, unchanged MP, cross-floor warp, surface return",
+      "Six-ROM original spell and assist regression checks",
+      "Android assembleRelease and lintVitalRelease",
+      "APK certificate SHA256 matches previous release: 683401fed21653794b6bf89b6f50062e41fd63218e94c501f039c732287fa151",
+      "16 KiB ZIP alignment and APK content check"
+    ],
+    "unverified": [
+      "Android device operation",
+      "All destination tiles, floor events and non-exploration scenes"
+    ],
+    "source_files_sha256": {
+      "app/core_bridge.c": "bb2de908716278a260a2b63b38c3dcacc1403a12bd5b98dd4a44a3f9b114487b",
+      "app/core_bridge.h": "ba3c7b69b2452ef244f34980fe08aae4e6a915dd042d082d3293b89ed3b9b7ca",
+      "app/session.cpp": "df612df28db5b767649cdfb877f6d96b2f9f6dba35f1ca82b7495adc1cc7498a",
+      "app/main.cpp": "36783b59208618b8f593f15a6d4b8471954a81b8fc93dc9d72d5eb985f080da2",
+      "app/spell_map_view.cpp": "c7c3cd2b0bd50bda99b767ebb21ea71dee371b2956d6c0e85f40f3d2503b5cf7",
+      "app/persistence_check.cpp": "2bca32cd2909382c8a2c85d6e09c09c8de31da23517af330c080edb453fb6108"
+    }
+  },
+  "release_artifacts_sha256": {
+    "Windows/wiiz.exe": "e068c1b2ce6f0af532bf9eab52b7d338cc4b77beeea64cb5f6ad67a301c8258f",
+    "Android/Wiiz-0.1.2-arm64-v8a.apk": "73af288c06b61d5888823ff626782c0651d7775b8bb225ef8fbf52800f47a707"
+  },
+  "item_editor_release": {
+    "updated": "2026-11-21",
+    "built_at_utc": "2026-11-21T13:58:26.113118+00:00",
+    "source_base_commit": "3517d0b2af48a0d3d632f5485edfbcb8329c05bb",
+    "source_worktree_clean": false,
+    "features": [
+      "GBWiz-style party inventory editor: equip/remove, transfer/delete/reorder, collect unidentified and send unequipped",
+      "Any non-battle scene with a valid party; no location allowlist or dungeon-input-wait requirement",
+      "Verified original inventory cache synchronization; native item transfers finish before opening",
+      "Native character AC/passive recalculation on an isolated existing binjnes core; shared town scratch RAM preserved",
+      "Windows I / Q Party items and Android Items button, including while the host map is displayed",
+      "Original battle context and restored battle states reject the editor; absent/disbanded parties are rejected"
+    ],
+    "validation": [
+      "Six original and parameter-edited FC ROMs: item operations, flags/curse guards, native damage calculation, unrelated records preserved, save reload and gameplay resume",
+      "Six-ROM 14-scene checks: dungeon, camp/person/detail, tavern/roster, castle, inn/person, shop/person/inventory, temple, town edge; original screen preserved and edited inventory survives native resume",
+      "Original training entry disbands the party; no-party rejection verified",
+      "Six-ROM original encounter entry and restored battle snapshot: item editor refused, SRAM unchanged",
+      "Six-ROM SDL open/submenu/close/state-load-exit checks; ROM unchanged",
+      "Windows x64 Release and signed Android arm64-v8a Release builds",
+      "APK certificate SHA256 matches previous distribution: 683401fed21653794b6bf89b6f50062e41fd63218e94c501f039c732287fa151",
+      "APK 16KiB ZIP alignment, architecture and forbidden-content checks"
+    ],
+    "scene_policy": {
+      "valid_party_required": true,
+      "battle_allowed": false,
+      "location_allowlist": false,
+      "native_training_disband": "No-party rejection; native game behavior unchanged"
+    },
+    "unverified": [
+      "Android physical-device display/touch",
+      "All item/class/alignment/party combinations, every native submenu and arbitrary ROM modifications"
+    ],
+    "source_files_sha256": {
+      "CMakeLists.txt": "3a88d5f7827b855d4668e956f15efe5fdfd84db03e9256e525bbeaf484e2db52",
+      "app/main.cpp": "4e26faf332ffb7381d098fbb2467dbbff29f15c844b75f8d15aac012d3dcae46",
+      "app/core_bridge.c": "027bf04a64c416cff4d141d5740680f2d400680d63b72d9fbf457396a397cfc0",
+      "app/core_bridge.h": "7a4edf35722c78bdf9a547f3d00d2d02a34eb592d2e80b675aa874b5127d226f",
+      "app/session.cpp": "6b9c047ef367a945a4e8e9aa8b50d68cc946a2734fcb1d519582a040061e0630",
+      "app/session.hpp": "8dec85c71f0e499562215ded0a638ee7819e9c522734407531fdbe4f7e685632",
+      "app/item_editor.hpp": "60ad4af42b6bc11ffdcb3ce4b1f43d020f9108da1de4e837ff09d1dcef1bf16a",
+      "app/persistence_check.cpp": "e3bf64911f15d9a64feaad17703dd8bf71b91b4b58ba7ea8aff453e842ddf95b",
+      "app/spell_map_view.cpp": "c7c3cd2b0bd50bda99b767ebb21ea71dee371b2956d6c0e85f40f3d2503b5cf7",
+      "android/app/src/main/java/com/wiiz/app/WiizActivity.java": "62482943582d01b2f49eba624f72c9d410b67fc3fbb6c7477d418e701a6c4015",
+      "android/app/src/main/java/com/wiiz/app/ControllerLayout.java": "4df64675cdadf6390e5a7b378747f83c5c05b49afbfcec815ca518a5fdaaa17f",
+      "tests/check_native_items.py": "044177fd183b52481dfbb6a696187bd32db2478a183581ed98768e967682f791",
+      "docs/item-editor.md": "7764135473b827e1fb48105c99e7c3abcb9f9d95ef14a0f77100f6212b32e715"
+    }
+  },
+  "item_transfer_fix": {
+    "built_at_utc": "2026-11-21T14:09:28.342624+00:00",
+    "validation": [
+      "Six original and parameter-edited FC I/II/III ROMs: item transfer and bulk transfers",
+      "FC I scene and SDL checks",
+      "Windows x64 and Android arm64-v8a Release builds",
+      "Previous APK certificate match and 16KiB ZIP alignment"
+    ],
+    "unverified": [
+      "Original user crash conditions and physical Android device"
+    ],
+    "source_files_sha256": {
+      "app/core_bridge.c": "aa70d2525bceb0c28a9e8ba90b8b4a351a0874cebc9e7ed7bb9cbc6c9efc0094",
+      "third_party/binjnes/src/emulator.c": "99ea2ba1425e1cb020d06e549b4388a616305014119c3b164fe91c15389af180"
+    }
+  },
+  "versioned_release": {
+    "directory": "0.1.2",
+    "validation": [
+      "Windows Release and signed Android Release",
+      "APK certificate matches 0.1.1; ZIP alignment verified",
+      "Installed and launched Android 0.1.2 on physical device",
+      "0.1.1 crash log identified pending vblank NMI during item recalculation",
+      "Physical Android device: item editor remained open, inventory changed, same process remained active and no new Wiiz crash entry appeared",
+      "Windows FC I item transfer and bulk transfer checks passed"
+    ],
+    "source_files_sha256": {
+      "app/core_bridge.c": "bfe7bbedaae327d79947e5d4e0d3599f974d180e245af23c9d811cf7e3c47653",
+      "third_party/binjnes/src/emulator.c": "4f78a5bc2fc8ccf5638e180d1f209d55383a80c534d649d7a23b452d8dfcdb7f",
+      "third_party/binjnes/src/emulator.h": "0c8a0063ad5c01084302570047be875f1d8a7dd25607925e190c21e822dd1b54",
+      "CMakeLists.txt": "1f4d14589c537b9bc4695caa7f2e60767f43789be4c9a1042e4f6f792fc33448",
+      "android/app/build.gradle": "9bec273e11a89fe898d479f516f8e2f704fbbcfce99b1dbcc96635c39f3ac184"
+    }
+  }
+}

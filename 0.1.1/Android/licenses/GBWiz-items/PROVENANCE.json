@@ -1,0 +1,10 @@
+{
+  "source": "../GBWiz/src/item_menu.h",
+  "upstream": "https://github.com/bryful/GBWiz",
+  "local_head": "f7ebeb6a986afecda5ffbcedf322a63920658461",
+  "source_sha256": "137f4f49a03d836337e9c95e5ddc765f56d63c60c567dc32d3aa5ebcac9a5e7f",
+  "license": "MIT, Copyright (c) 2026 bryful",
+  "reuse": "Paused two-character inventory UI, action ordering, default-no delete, flag-preserving transfers and bulk operations adapted in app/item_editor.hpp. Unmodified local source retained for attribution and comparison; local file modifications relative to HEAD unconfirmed.",
+  "dependencies": "The retained Gambatte adapter is reference-only and not compiled. Runtime uses the existing binjnes core (MIT), SDL3 (zlib), WizEdit save repair (MIT). No new emulator dependency.",
+  "compatibility": "FC I Mapper 1, FC II/III Mapper 4; C++20 Windows x64 and Android arm64-v8a. GB/GBC record offsets and Gambatte API are not used."
+}

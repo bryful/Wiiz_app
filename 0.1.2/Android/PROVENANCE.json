@@ -1,0 +1,22 @@
+{
+  "upstream": "https://github.com/libsdl-org/SDL/tree/release-3.2.28/android-project",
+  "license": "zlib (assets/licenses/SDL3.txt)",
+  "reason": "Reuse official SDL Android Activity, input/audio/lifecycle JNI glue and Gradle wrapper, matching native SDL 3.2.28. No emulator implementation added.",
+  "files": {
+    "gradlew": "a3cad034edd7578f411ca316d00f5ca913996609d20a33b0e043821ce6a201a4",
+    "gradlew.bat": "c13c6e91b9a517783976de213d46398c661ea9e17651376d7301e839eaedcc62",
+    "gradle/wrapper/gradle-wrapper.jar": "2c23278a62dc9f96ab11bee897d9f53e6479d6419135e4560ce822a6431df5e5",
+    "gradle/wrapper/gradle-wrapper.properties": "f967ddf5080a7bcba78ffbf255a74f4fd160a93e66e1c6b68dbe217876c65456",
+    "app/src/main/java/org/libsdl/app/HIDDevice.java": "afdeaf583f051583eff5cc9dcbfb983e3e8923e66d1130ff3e30c21afc8f87f1",
+    "app/src/main/java/org/libsdl/app/HIDDeviceBLESteamController.java": "6ffef400c0a0506e5aa4fee7d630ce3c27caf9eeea912429f0ddc812121fd29b",
+    "app/src/main/java/org/libsdl/app/HIDDeviceManager.java": "742947957e5571eaa0123fe423c74704d8c51401663b6915cdab241562ef1c1e",
+    "app/src/main/java/org/libsdl/app/HIDDeviceUSB.java": "359c0e105dcdd76f8ffff388afff18a03ec6abcdf1cafc0f13228bbbbb19afbc",
+    "app/src/main/java/org/libsdl/app/SDL.java": "4ca4bf8ee88ce725af710daf03ec9731ba18896133e6dc592c407c08cd988f56",
+    "app/src/main/java/org/libsdl/app/SDLActivity.java": "087b1432b71ae855584122688229e4e2a4cb5d26aed2b7360857db8bb324486e",
+    "app/src/main/java/org/libsdl/app/SDLAudioManager.java": "b44c17e39ed75bd4b777daf162ac0f476f7ed19c3519dc35c19737944a0beda5",
+    "app/src/main/java/org/libsdl/app/SDLControllerManager.java": "118e2785814dcd39b2995a35f67de8b1e13315b28ce73354a8a905d721a49aea",
+    "app/src/main/java/org/libsdl/app/SDLDummyEdit.java": "6653321f8034e26b5d3e0d42b86cdd6b75bffdf84ee987716fce9824b119d5df",
+    "app/src/main/java/org/libsdl/app/SDLInputConnection.java": "856ff2b1a04d37fbd301970e61d113569af9d8188c6f0c71eb65ee3a63db3dca",
+    "app/src/main/java/org/libsdl/app/SDLSurface.java": "655c278e9319a1fc3ba09ab0ea9ef7291ab3b0e5445c4063fdf557f81496405c"
+  }
+}
