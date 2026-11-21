@@ -1,8 +1,8 @@
 {
-  "updated": "2026-11-21",
+  "updated": "2026-11-22",
   "version": "0.1.2",
-  "source_commit": "3517d0b2af48a0d3d632f5485edfbcb8329c05bb",
-  "source_worktree_clean": false,
+  "source_commit": "26012bd70433253dbeb492f1d227206e56546f72",
+  "source_worktree_clean": true,
   "windows": "x64 Release",
   "android": {
     "package": "com.wiiz.app",
@@ -15,7 +15,7 @@
     "versionName": "0.1.2"
   },
   "known_distribution_issue": "Redistribution permission for optional Wiz1 bug-fix patch data remains unconfirmed. See Windows/licenses/Wiz1-patches.txt and Android/licenses/Wiz1-patches.txt.",
-  "built_at_utc": "2026-11-21T14:18:41.532220+00:00",
+  "built_at_utc": "2026-11-21T15:05:39.776696+00:00",
   "features": [
     "Next-level experience preparation",
     "Tavern mixed-alignment parties",
@@ -31,11 +31,11 @@
   "experience_behavior": "Advance to the first cumulative threshold strictly greater than current SRAM experience on every activation, including repeated activations before resting.",
   "experience_level_display": "EXP EST. LV: current experience-based estimated level, refreshed after each addition",
   "windows_release": {
-    "updated": "2026-11-21",
+    "updated": "2026-11-22",
     "configuration": "x64 Release",
-    "built_at_utc": "2026-11-21T14:18:41.532220+00:00",
-    "source_base_commit": "3517d0b2af48a0d3d632f5485edfbcb8329c05bb",
-    "source_worktree_clean": false,
+    "built_at_utc": "2026-11-21T15:05:39.776696+00:00",
+    "source_base_commit": "26012bd70433253dbeb492f1d227206e56546f72",
+    "source_worktree_clean": true,
     "features": [
       "ROM-basename state filenames and legacy state loading",
       "Wiz1, Wiz2 and Wiz3 roster race and class editing during gameplay without a reset",
@@ -99,11 +99,11 @@
     "version": "0.1.2"
   },
   "android_release": {
-    "updated": "2026-11-21",
+    "updated": "2026-11-22",
     "configuration": "arm64-v8a Release",
-    "built_at_utc": "2026-11-21T14:18:41.532220+00:00",
-    "source_base_commit": "3517d0b2af48a0d3d632f5485edfbcb8329c05bb",
-    "source_worktree_clean": false,
+    "built_at_utc": "2026-11-21T15:05:39.776696+00:00",
+    "source_base_commit": "26012bd70433253dbeb492f1d227206e56546f72",
+    "source_worktree_clean": true,
     "features": [
       "ROM-basename state filenames and legacy state loading",
       "Wiz1, Wiz2 and Wiz3 roster race and class editing during gameplay without a reset",
@@ -216,8 +216,9 @@
     }
   },
   "release_artifacts_sha256": {
-    "Windows/wiiz.exe": "e068c1b2ce6f0af532bf9eab52b7d338cc4b77beeea64cb5f6ad67a301c8258f",
-    "Android/Wiiz-0.1.2-arm64-v8a.apk": "73af288c06b61d5888823ff626782c0651d7775b8bb225ef8fbf52800f47a707"
+    "Windows/wiiz.exe": "80701eff3d2093881fc7f40fe7c693d1f6621a7abdd9e669fff8bdb5342edfa0",
+    "Android/Wiiz-0.1.2-arm64-v8a.apk": "73af288c06b61d5888823ff626782c0651d7775b8bb225ef8fbf52800f47a707",
+    "Wiiz-0.1.2-windows-x64.zip": "9ed195132ebcc409e63492d2e9ef7c8de0d43dbc1e910b9481d3db3866e5d433"
   },
   "item_editor_release": {
     "updated": "2026-11-21",
@@ -301,5 +302,14 @@
       "CMakeLists.txt": "1f4d14589c537b9bc4695caa7f2e60767f43789be4c9a1042e4f6f792fc33448",
       "android/app/build.gradle": "9bec273e11a89fe898d479f516f8e2f704fbbcfce99b1dbcc96635c39f3ac184"
     }
+  },
+  "release_packaging": {
+    "source_commit": "26012bd70433253dbeb492f1d227206e56546f72",
+    "validation": [
+      "Windows x64 Release and ZIP integrity",
+      "Android Release, arm64-v8a, versionName 0.1.2, versionCode 3, non-debuggable",
+      "APK certificate matches previous package; 16 KiB alignment",
+      "No ROM, save, state or signing credentials in package contents"
+    ]
   }
 }
